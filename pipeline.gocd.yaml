@@ -15,3 +15,6 @@ pipelines:
                - build:
                    source: build/libs/*.jar
                    destination: build/libs
+               - test:
+                   source: build/spock-reports
+                   destination: build/spock-reports
