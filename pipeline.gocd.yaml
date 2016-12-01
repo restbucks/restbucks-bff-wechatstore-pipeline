@@ -5,6 +5,9 @@ pipelines:
       src: 
         git: https://github.com/restbucks/restbucks-bff-wechatstore-pipeline.git
         branch: master
+      mydependency:
+        pipeline: restbucks-bff-wechatstore
+        stage: commit  
     stages:
       - deploy: 
           jobs:
